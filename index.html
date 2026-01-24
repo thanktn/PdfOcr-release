@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PdfOcr - Giải pháp trích xuất văn bản từ PDF mạnh mẽ</title>
+    <title>PdfOcr - Trí tuệ AI cho tài liệu PDF của bạn</title>
     <meta name="description"
-        content="PdfOcr giúp bạn dễ dàng chuyển đổi các tệp PDF sang văn bản Word với độ chính xác cao nhờ công nghệ OCR tiên tiến, hỗ trợ tiếng Việt hoàn hảo.">
+        content="PdfOcr giúp bạn trích xuất văn bản từ PDF với độ chính xác tuyệt đối nhờ sự kết hợp giữa MyOCR và Google Gemini AI. Hỗ trợ tiếng Việt hoàn hảo và giữ nguyên định dạng.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Outfit:wght@500;700&display=swap"
@@ -73,6 +73,7 @@
             margin-bottom: 1.5rem;
             background: linear-gradient(135deg, #fff 0%, #a855f7 100%);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -252,9 +253,9 @@
     <header>
         <div class="container hero-content">
             <div class="hero-text animate">
-                <h1>Tự động hóa OCR cho mọi tệp PDF</h1>
-                <p>Giải pháp tối ưu để trích xuất văn bản từ tài liệu PDF quét, hỗ trợ đa luồng và tối ưu hóa chính xác
-                    cho tiếng Việt.</p>
+                <h1>Sức mạnh AI cho tài liệu PDF của bạn</h1>
+                <p>Kết hợp giữa trích xuất cục bộ (LocalOCR) và trí tuệ nhân tạo đám mây (Google Gemini AI) để mang lại
+                    độ chính xác 99.9% cho mọi tài liệu Việt ngữ.</p>
                 <div class="cta-buttons">
                     <a href="https://github.com/thanktn/PdfOcr-release/releases" class="btn btn-primary">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -293,6 +294,21 @@
                     <div class="feature-icon">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                            </path>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                            <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                        </svg>
+                    </div>
+                    <h3>Sức mạnh Gemini AI</h3>
+                    <p>Tích hợp trí tuệ nhân tạo để nhận diện cấu trúc phức tạp (bảng biểu, tiêu đề) và tự động trích
+                        xuất thông minh.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="16 16 12 12 8 16"></polyline>
                             <line x1="12" y1="12" x2="12" y2="21"></line>
                             <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path>
@@ -300,19 +316,8 @@
                         </svg>
                     </div>
                     <h3>Nhận diện tiếng Việt</h3>
-                    <p>Sử dụng mô hình EasyOCR được tối ưu hóa riêng cho các ký tự tiếng Việt, đảm bảo độ chính xác vượt
-                        trội.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                        </svg>
-                    </div>
-                    <h3>Tốc độ vượt trội</h3>
-                    <p>Cho phép xử lý nhiều trang PDF cùng lúc, tiết kiệm tối đa
-                        thời gian.</p>
+                    <p>Sử dụng mô hình OCR tối ưu riêng cho tiếng Việt, đảm bảo độ chính xác vượt trội khi xử lý
+                        offline.</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
@@ -322,11 +327,11 @@
                             <polyline points="14 2 14 8 20 8"></polyline>
                             <line x1="16" y1="13" x2="8" y2="13"></line>
                             <line x1="16" y1="17" x2="8" y2="17"></line>
-                            <polyline points="10 9 9 9 8 9"></polyline>
                         </svg>
                     </div>
                     <h3>Xuất file Word</h3>
-                    <p>Tự động lưu kết quả nhận diện ra định dạng .docx chuyên nghiệp.</p>
+                    <p>Tự động chuyển đổi kết quả sang định dạng .docx chuyên nghiệp, giữ nguyên layout gốc của tài
+                        liệu.</p>
                 </div>
             </div>
         </div>
